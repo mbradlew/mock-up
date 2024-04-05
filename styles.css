@@ -1,8 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
     margin: 0;
     padding: 0;
+}
+
+/* Background image for index.html */
+body.index {
+    background: url('snow\ cats.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+    background-blend-mode: multiply; /* Adjust blend mode as needed */
+}
+
+/* Linear gradient from left to right for profiles.html */
+body.profiles {
+    background: linear-gradient(to right, #FF8C00, #FF6347); /* Adjust colors as needed */
 }
 
 header {
@@ -15,21 +27,6 @@ header h1 {
     color: whitesmoke;
     font-size: 36px;
     margin-bottom: 10px;
-}
-
-header h3 {
-    background-color:blue;
-    margin: 0%;
-    padding: 0%;
-}
-
-header h3 {
-    color: black;
-    font-size: 18px;
-}
-
-.important {
-  font-weight: bold;  
 }
 
 main {
@@ -54,6 +51,17 @@ section p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
+}
+
+/* Ensure responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For images within specific sections, you can target them individually if needed */
+section img {
+    width: 100%; /* Ensures images fill the container */
 }
 
 footer {
