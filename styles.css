@@ -21,6 +21,7 @@ header {
     background-color: teal;
     padding: 20px;
     text-align: center;
+    width: 100%; /* Full width */
 }
 
 header h1 {
@@ -29,8 +30,19 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Links in the navigation */
+nav ul li a {
+    color: white; /* Set the color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 main {
     padding: 20px;
+    width: 100%; /* Full width */
 }
 
 section {
@@ -69,6 +81,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%; /* Full width */
 }
 
 footer nav ul {
@@ -85,8 +98,20 @@ footer nav ul li a {
     text-decoration: none;
 }
 
+footer nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 footer p {
     color: white;
     font-size: 14px;
     margin-top: 10px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    /* Hide sidebar previews on small screens */
+    aside {
+        display: none;
+    }
 }
